@@ -1,0 +1,250 @@
+{
+  "envelope": {
+    "groupHeader": {
+      "agencyCode": "X",
+      "applicationReceiverCode": "L090124400S",
+      "applicationSenderCode": "N1972535318",
+      "controlNumber": "302935979",
+      "date": "2024-05-18",
+      "functionalIdentifierCode": "PO",
+      "release": "004010",
+      "time": "10:13"
+    },
+    "groupTrailer": {
+      "controlNumber": "302935979",
+      "numberOfTransactions": "1"
+    },
+    "interchangeHeader": {
+      "acknowledgementRequestedCode": "0",
+      "authorizationInformation": "          ",
+      "authorizationInformationQualifier": "00",
+      "componentSeparator": "\u003e",
+      "controlNumber": "503793368",
+      "controlVersionNumber": "00401",
+      "date": "2024-05-18",
+      "receiverId": "OSD-PartnersGPO",
+      "receiverQualifier": "ZZ",
+      "repetitionSeparator": "U",
+      "securityInformation": "          ",
+      "securityQualifier": "00",
+      "senderId": "N1972535318    ",
+      "senderQualifier": "ZZ",
+      "time": "10:13",
+      "usageIndicatorCode": "P"
+    },
+    "interchangeTrailer": {
+      "controlNumber": "503793368",
+      "numberOfFunctionalGroups": "1"
+    }
+  },
+  "transactionSets": [
+    {
+      "heading": {
+        "transaction_set_header_ST": {
+          "transaction_set_identifier_code_01": "850",
+          "transaction_set_control_number_02": 160757450
+        },
+        "beginning_segment_for_purchase_order_BEG": {
+          "transaction_set_purpose_code_01": "00",
+          "purchase_order_type_code_02": "SA",
+          "purchase_order_number_03": "44992498",
+          "date_05": "2024-03-16"
+        },
+        "date_time_reference_DTM": [
+          {
+            "date_time_qualifier_01": "004",
+            "date_02": "2024-03-16",
+            "time_03": "13:00",
+            "time_code_04": "UT"
+          }
+        ],
+        "name_N1_loop": [
+          {
+            "name_N1": {
+              "entity_identifier_code_01": "ST",
+              "name_02": "Wellstar Spalding Medical Center"
+            },
+            "additional_name_information_N2": [
+              {
+                "name_01": "leave on back dock during business hours"
+              }
+            ],
+            "address_information_N3": [
+              {
+                "address_information_01": "601 South 8th Street",
+                "address_information_02": "Griffin, GA, 30224"
+              }
+            ],
+            "geographic_location_N4": [
+              {
+                "city_name_01": "Griffin",
+                "state_or_province_code_02": "GA",
+                "postal_code_03": "30224",
+                "location_qualifier_05": "P",
+                "location_identifier_06": "601 South 8th Street"
+              }
+            ]
+          },
+          {
+            "name_N1": {
+              "entity_identifier_code_01": "BT",
+              "name_02": "Wellstar Corporate Office"
+            },
+            "additional_name_information_N2": [
+              {
+                "name_01": "open-source distribution account"
+              }
+            ],
+            "address_information_N3": [
+              {
+                "address_information_01": "793 Sawyer Rd",
+                "address_information_02": "Marietta, GA, 30062"
+              }
+            ],
+            "geographic_location_N4": [
+              {
+                "city_name_01": "Marietta",
+                "state_or_province_code_02": "GA",
+                "postal_code_03": "30062",
+                "location_qualifier_05": "P",
+                "location_identifier_06": "793 Sawyer Rd"
+              }
+            ]
+          }
+        ]
+      },
+      "detail": {
+        "baseline_item_data_PO1_loop": [
+          {
+            "baseline_item_data_PO1": {
+              "assigned_identification_01": "10",
+              "quantity_ordered_02": 58,
+              "unit_or_basis_for_measurement_code_03": "CA",
+              "unit_price_04": 0,
+              "product_service_id_qualifier_06": "UK",
+              "product_service_id_07": "30382903051947",
+              "product_service_id_qualifier_10": "MG",
+              "product_service_id_11": "305194",
+              "product_service_id_qualifier_12": "VC",
+              "product_service_id_13": "305194",
+              "product_service_id_qualifier_14": "MF",
+              "product_service_id_15": "G038290",
+              "product_service_id_qualifier_16": "BP",
+              "product_service_id_17": "18018",
+              "product_service_id_qualifier_18": "IN",
+              "product_service_id_19": "18018",
+              "product_service_id_qualifier_20": "LT",
+              "product_service_id_21": "3080-6322"
+            }
+          },
+          {
+            "baseline_item_data_PO1": {
+              "assigned_identification_01": "20",
+              "quantity_ordered_02": 63,
+              "unit_or_basis_for_measurement_code_03": "CA",
+              "unit_price_04": 0,
+              "product_service_id_qualifier_06": "UK",
+              "product_service_id_07": "30382903051978",
+              "product_service_id_qualifier_10": "MG",
+              "product_service_id_11": "305197",
+              "product_service_id_qualifier_12": "VC",
+              "product_service_id_13": "305197",
+              "product_service_id_qualifier_14": "MF",
+              "product_service_id_15": "G038290",
+              "product_service_id_qualifier_16": "BP",
+              "product_service_id_17": "105010",
+              "product_service_id_qualifier_18": "IN",
+              "product_service_id_19": "105010",
+              "product_service_id_qualifier_20": "LT",
+              "product_service_id_21": "7834-5959"
+            }
+          },
+          {
+            "baseline_item_data_PO1": {
+              "assigned_identification_01": "30",
+              "quantity_ordered_02": 39,
+              "unit_or_basis_for_measurement_code_03": "EA",
+              "unit_price_04": 0,
+              "product_service_id_qualifier_06": "UK",
+              "product_service_id_07": "00382903057122",
+              "product_service_id_qualifier_10": "MG",
+              "product_service_id_11": "305712",
+              "product_service_id_qualifier_12": "VC",
+              "product_service_id_13": "305712",
+              "product_service_id_qualifier_14": "MF",
+              "product_service_id_15": "G038290",
+              "product_service_id_qualifier_16": "BP",
+              "product_service_id_17": "160507",
+              "product_service_id_qualifier_18": "IN",
+              "product_service_id_19": "160507",
+              "product_service_id_qualifier_20": "LT",
+              "product_service_id_21": "2418-4284"
+            }
+          },
+          {
+            "baseline_item_data_PO1": {
+              "assigned_identification_01": "40",
+              "quantity_ordered_02": 11,
+              "unit_or_basis_for_measurement_code_03": "CA",
+              "unit_price_04": 0,
+              "product_service_id_qualifier_06": "UK",
+              "product_service_id_07": "30382903057642",
+              "product_service_id_qualifier_10": "MG",
+              "product_service_id_11": "305764",
+              "product_service_id_qualifier_12": "VC",
+              "product_service_id_13": "305764",
+              "product_service_id_qualifier_14": "MF",
+              "product_service_id_15": "G038290",
+              "product_service_id_qualifier_16": "BP",
+              "product_service_id_17": "113996",
+              "product_service_id_qualifier_18": "IN",
+              "product_service_id_19": "113996",
+              "product_service_id_qualifier_20": "LT",
+              "product_service_id_21": "4324-3813"
+            }
+          },
+          {
+            "baseline_item_data_PO1": {
+              "assigned_identification_01": "50",
+              "quantity_ordered_02": 87,
+              "unit_or_basis_for_measurement_code_03": "CA",
+              "unit_price_04": 0,
+              "product_service_id_qualifier_06": "UK",
+              "product_service_id_07": "30382903057826",
+              "product_service_id_qualifier_10": "MG",
+              "product_service_id_11": "305782",
+              "product_service_id_qualifier_12": "VC",
+              "product_service_id_13": "305782",
+              "product_service_id_qualifier_14": "MF",
+              "product_service_id_15": "G038290",
+              "product_service_id_qualifier_16": "BP",
+              "product_service_id_17": "130173",
+              "product_service_id_qualifier_18": "IN",
+              "product_service_id_19": "130173",
+              "product_service_id_qualifier_20": "LT",
+              "product_service_id_21": "1834-0496"
+            }
+          }
+        ]
+      },
+      "summary": {
+        "transaction_totals_CTT_loop": [
+          {
+            "transaction_totals_CTT": {
+              "number_of_line_items_01": 5
+            }
+          }
+        ],
+        "transaction_set_trailer_SE": {
+          "number_of_included_segments_01": 18,
+          "transaction_set_control_number_02": 160757450
+        }
+      }
+    }
+  ],
+  "delimiters": {
+    "element": "*",
+    "composite": "\u003e",
+    "segment": "~"
+  }
+}
