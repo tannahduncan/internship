@@ -224,14 +224,45 @@
               "product_service_id_qualifier_20": "LT",
               "product_service_id_21": "1834-0496"
             }
-          }
+          },
+          {
+              "baseline_item_data_PO1": {
+                "assigned_identification_01": "60",
+                "quantity_ordered_02": 45,
+                "unit_or_basis_for_measurement_code_03": "EA",
+                "unit_price_04": 0,
+                "product_service_id_qualifier_06": "UK",
+                "product_service_id_07": "30382903059999",
+                "product_service_id_qualifier_10": "MG",
+                "product_service_id_11": "306000",
+                "product_service_id_qualifier_12": "VC",
+                "product_service_id_13": "306000",
+                "product_service_id_qualifier_14": "MF",
+                "product_service_id_15": "G039999",
+                "product_service_id_qualifier_16": "BP",
+                "product_service_id_17": "200123",
+                "product_service_id_qualifier_18": "IN",
+                "product_service_id_19": "200123",
+                "product_service_id_qualifier_20": "LT",
+                "product_service_id_21": "9999-1234",
+                "product_item_description_PID_loop": [
+  {
+    "product_item_description_PID": {
+      "item_description_type_01": "F",
+      "product_description_05": "New item description here"
+    }
+  }
+]
+
+              }
+            }
         ]
       },
       "summary": {
         "transaction_totals_CTT_loop": [
           {
             "transaction_totals_CTT": {
-              "number_of_line_items_01": 5
+              "number_of_line_items_01": 6
             }
           }
         ],
