@@ -232,3 +232,9 @@ type Summary struct {
 	TransactionTotalsCTTLoop []TransactionTotalsCTTLoop `json:"transaction_totals_CTT_loop,omitempty"`
 	TransactionSetTrailerSE  TransactionSetTrailerSE    `json:"transaction_set_trailer_SE,omitempty"`
 }
+
+/* New Line Item: Added under baseline_item_data_PO1; assigned identification 60
+Description element: added inside baseline_item_data_PO1; assigned identification 60
+object as product_item_description_PID_loop
+Updated Total Line Items: Set to 6 in transaction_total_CTT
+*/
