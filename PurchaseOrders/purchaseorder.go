@@ -233,7 +233,13 @@ type Summary struct {
 	TransactionSetTrailerSE  TransactionSetTrailerSE    `json:"transaction_set_trailer_SE,omitempty"`
 }
 
-/* New Line Item: Added under baseline_item_data_PO1; assigned identification 60
+/*
+INSTRUCTIONS GIVEN:
+1. Add a new line item to purchase order
+2. Add a description element to the order (append to []ProductItemDescriptionPIDLoop)
+3. Update the total number of line items in TransactionTotalsCTT.NumberoOfLineItems01
+WHAT I DID:
+New Line Item: Added under baseline_item_data_PO1; assigned identification 60
 Description element: added inside baseline_item_data_PO1; assigned identification 60
 object as product_item_description_PID_loop
 Updated Total Line Items: Set to 6 in transaction_total_CTT
