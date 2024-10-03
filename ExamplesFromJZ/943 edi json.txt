@@ -1,0 +1,463 @@
+ISA*00*          *00*          *ZZ*G0749756       *ZZ*OSD-PartnersGPO*231226*1313*U*00401*011237123*0*P*>~
+GS*AR*G0749756*L090124400S*20231226*1313*190041038*X*004010~
+ST*943*69045092~
+W06*J*686656543691*20231226~
+G62*09*20231226*B*1313*UT~
+W04*26*EA**UK*00801741224317*MG*CK001039*******VC*CK001039~
+W04*60*EA**UK*00801741165139*MG*U820094*******VC*U820094~
+W04*13*EA**UK*20884521126807*MG*170073*******VC*No Catalog Number~
+W04*37*CA**UK*30707387787555*MG*1668*******VC*1668~
+W04*58*CA**UK*30605861021532*MG*6032A2-S*******VC*6032A2-S~
+W04*14*EA**UK*00749756914932*MG*89-9557*******VC*89-9557~
+W04*37*EA**UK*00749756912075*MG*89-9488*******VC*89-9488~
+W04*48*CA**UK*30382904413577*MG*441357*******VC*441357~
+W04*22*EA**UK*00801741214370*MG*H47522*******VC*H47522~
+W04*5*EA**UK*20884521031743*MG*90049*******VC*No Catalog Number~
+W04*45*BX**UK*50707387081602*MG*DS-15*******VC*DS-15~
+W04*5*EA**UK*00749756911313*MG*89-9132*******VC*89-9132~
+W04*12*CA**UK*10884521126794*MG*170072*******VC*No Catalog Number~
+W04*40*EA**UK*20884521157757*MG*8888119371P*******VC*No Catalog Number~
+W04*35*CA**UK*30382902612071*MG*261207*******VC*261207~
+W04*18*CA**UK*10801741078078*MG*70301QC20*******VC*70301QC20~
+W04*37*EA**UK*00382903410101*MG*341010*******VC*341010~
+W04*42*CA**UK*10801741183239*MG*INTS14C*******VC*INTS14C~
+W04*33*CA**UK*10382902219931*MG*221993*******VC*221993~
+W04*13*BX**UK*50605861008797*MG*6029A2E*******VC*6029A2E~
+W04*47*EA**UK*00749756944731*MG*89-9787*******VC*No Catalog Number~
+W04*1*CA**UK*10382902217333*MG*221733*******VC*221733~
+W04*44*CA**UK*10801741224345*MG*CK001044*******VC*CK001044~
+W04*9*CA**UK*30605861028098*MG*900312*******VC*900312~
+W04*42*CA**UK*30707387567164*MG*6661EZ*******VC*6661EZ~
+W03~
+SE*30*69045092~
+GE*1*190041038~
+IEA*1*011237123~
+
+{
+   "WarehouseExpectedReceipt": [
+      {
+         "LineItem": [
+            {
+               "LineNumber": 1,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "CK001039",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "VendorItemCode": "CK001039",
+               "ExpectedUomCode": "EA",
+               "Active": "True",
+               "ExpectedQuantity": "26",
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 2,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "U820094",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "VendorItemCode": "U820094",
+               "ExpectedUomCode": "EA",
+               "Active": "True",
+               "ExpectedQuantity": "60",
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 3,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "No Catalog Number",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "VendorItemCode": "No Catalog Number",
+               "ExpectedUomCode": "EA",
+               "Active": "True",
+               "ExpectedQuantity": "13",
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 4,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "1668",
+               "LabelAttributes": {
+                  "Character10": "CA"
+               },
+               "VendorItemCode": "1668",
+               "ExpectedUomCode": "CA",
+               "Active": "True",
+               "ExpectedQuantity": "37",
+               "CustomAttributes": {
+                  "Character10": "CA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 5,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "6032A2-S",
+               "LabelAttributes": {
+                  "Character10": "CA"
+               },
+               "VendorItemCode": "6032A2-S",
+               "ExpectedUomCode": "CA",
+               "Active": "True",
+               "ExpectedQuantity": "58",
+               "CustomAttributes": {
+                  "Character10": "CA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 6,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "89-9557",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "VendorItemCode": "89-9557",
+               "ExpectedUomCode": "EA",
+               "Active": "True",
+               "ExpectedQuantity": "14",
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 7,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "89-9488",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "VendorItemCode": "89-9488",
+               "ExpectedUomCode": "EA",
+               "Active": "True",
+               "ExpectedQuantity": "37",
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 8,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "441357",
+               "LabelAttributes": {
+                  "Character10": "CA"
+               },
+               "VendorItemCode": "441357",
+               "ExpectedUomCode": "CA",
+               "Active": "True",
+               "ExpectedQuantity": "48",
+               "CustomAttributes": {
+                  "Character10": "CA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 9,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "H47522",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "VendorItemCode": "H47522",
+               "ExpectedUomCode": "EA",
+               "Active": "True",
+               "ExpectedQuantity": "22",
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 10,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "No Catalog Number",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "VendorItemCode": "No Catalog Number",
+               "ExpectedUomCode": "EA",
+               "Active": "True",
+               "ExpectedQuantity": "5",
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 11,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "DS-15",
+               "LabelAttributes": {
+                  "Character10": "BX"
+               },
+               "VendorItemCode": "DS-15",
+               "ExpectedUomCode": "BX",
+               "Active": "True",
+               "ExpectedQuantity": "45",
+               "CustomAttributes": {
+                  "Character10": "BX"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 12,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "89-9132",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "VendorItemCode": "89-9132",
+               "ExpectedUomCode": "EA",
+               "Active": "True",
+               "ExpectedQuantity": "5",
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 13,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "No Catalog Number",
+               "LabelAttributes": {
+                  "Character10": "CA"
+               },
+               "VendorItemCode": "No Catalog Number",
+               "ExpectedUomCode": "CA",
+               "Active": "True",
+               "ExpectedQuantity": "12",
+               "CustomAttributes": {
+                  "Character10": "CA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 14,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "No Catalog Number",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "VendorItemCode": "No Catalog Number",
+               "ExpectedUomCode": "EA",
+               "Active": "True",
+               "ExpectedQuantity": "40",
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 15,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "261207",
+               "LabelAttributes": {
+                  "Character10": "CA"
+               },
+               "VendorItemCode": "261207",
+               "ExpectedUomCode": "CA",
+               "Active": "True",
+               "ExpectedQuantity": "35",
+               "CustomAttributes": {
+                  "Character10": "CA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 16,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "70301QC20",
+               "LabelAttributes": {
+                  "Character10": "CA"
+               },
+               "VendorItemCode": "70301QC20",
+               "ExpectedUomCode": "CA",
+               "Active": "True",
+               "ExpectedQuantity": "18",
+               "CustomAttributes": {
+                  "Character10": "CA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 17,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "341010",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "VendorItemCode": "341010",
+               "ExpectedUomCode": "EA",
+               "Active": "True",
+               "ExpectedQuantity": "37",
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 18,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "INTS14C",
+               "LabelAttributes": {
+                  "Character10": "CA"
+               },
+               "VendorItemCode": "INTS14C",
+               "ExpectedUomCode": "CA",
+               "Active": "True",
+               "ExpectedQuantity": "42",
+               "CustomAttributes": {
+                  "Character10": "CA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 19,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "221993",
+               "LabelAttributes": {
+                  "Character10": "CA"
+               },
+               "VendorItemCode": "221993",
+               "ExpectedUomCode": "CA",
+               "Active": "True",
+               "ExpectedQuantity": "33",
+               "CustomAttributes": {
+                  "Character10": "CA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 20,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "6029A2E",
+               "LabelAttributes": {
+                  "Character10": "BX"
+               },
+               "VendorItemCode": "6029A2E",
+               "ExpectedUomCode": "BX",
+               "Active": "True",
+               "ExpectedQuantity": "13",
+               "CustomAttributes": {
+                  "Character10": "BX"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 21,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "No Catalog Number",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "VendorItemCode": "No Catalog Number",
+               "ExpectedUomCode": "EA",
+               "Active": "True",
+               "ExpectedQuantity": "47",
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 22,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "221733",
+               "LabelAttributes": {
+                  "Character10": "CA"
+               },
+               "VendorItemCode": "221733",
+               "ExpectedUomCode": "CA",
+               "Active": "True",
+               "ExpectedQuantity": "1",
+               "CustomAttributes": {
+                  "Character10": "CA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 23,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "CK001044",
+               "LabelAttributes": {
+                  "Character10": "CA"
+               },
+               "VendorItemCode": "CK001044",
+               "ExpectedUomCode": "CA",
+               "Active": "True",
+               "ExpectedQuantity": "44",
+               "CustomAttributes": {
+                  "Character10": "CA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 24,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "900312",
+               "LabelAttributes": {
+                  "Character10": "CA"
+               },
+               "VendorItemCode": "900312",
+               "ExpectedUomCode": "CA",
+               "Active": "True",
+               "ExpectedQuantity": "9",
+               "CustomAttributes": {
+                  "Character10": "CA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            },
+            {
+               "LineNumber": 25,
+               "ExpectedDate": "2023-12-26 00:00:00",
+               "ItemCode": "6661EZ",
+               "LabelAttributes": {
+                  "Character10": "CA"
+               },
+               "VendorItemCode": "6661EZ",
+               "ExpectedUomCode": "CA",
+               "Active": "True",
+               "ExpectedQuantity": "42",
+               "CustomAttributes": {
+                  "Character10": "CA"
+               },
+               "DispositionType": "GOOD_STOCK"
+            }
+         ],
+         "SupplierAddress": {
+            "ZipOrPostalCode": "30253",
+            "StateOrProvince": "GA",
+            "City": "McDonough",
+            "Address1": "1281 TEST"
+         },
+         "SupplierCode": "G0749756",
+         "Active": "true",
+         "FromSupplyOrder": "true",
+         "BackorderKept": "false",
+         "DivisionCode": "100",
+         "ExternalReference": "686656543691",
+         "ExpectedReceiptNumber": "686656543691",
+         "SupplierName": "DeRoyal",
+         "WarehouseCode": "TVL-S",
+         "AsnRequired": "false",
+         "RequiredDate": "2023-12-26 00:00:00",
+         "ExpectedReceiptType": "WAREHOUSE_TRANSFER_ORDER",
+         "OrganizationCode": "01",
+         "OrderDate": "2023-12-26 00:00:00"
+      }
+   ]
+}

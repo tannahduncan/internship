@@ -1,0 +1,179 @@
+ISA*00*          *00*          *ZZ*G0749756       *ZZ*OSD-PartnersGPO*240201*2152*U*00401*431163512*0*P*>~
+GS*OW*G0749756*L090124400S*20240201*2152*024664291*X*004010~
+ST*940*127129233~
+W05*N*591289141*66120089~
+N1*ST*Wellstar Spalding Regional Hospital~
+N3*601 S 8th Street*Griffin, GA 30224-4213~
+G62*09*20240201*B*2152*UT~
+LX*1~
+W01*22*EA**UK*50749756634842*MG*23-502B********VC*23-502B~
+LX*2~
+W01*11*EA**UK*00749756024266*MG*26-003********VC*26-003~
+LX*3~
+W01*18*EA**UK*00749756145732*MG*28-0102********VC*28-0102~
+LX*4~
+W01*10*EA**UK*00749756025355*MG*28-0801********VC*28-0801~
+LX*5~
+W01*23*EA**UK*00749756567503*MG*46-611********VC*46-611~
+LX*6~
+W01*25*EA**UK*50749756020492*MG*9115-03********VC*9115-03~
+LX*7~
+W01*25*EA**UK*00749756377089*MG*PHER-1500B********VC*PHER-1500B~
+LX*8~
+W01*18*EA**UK*00749756763912*MG*V71-2005********VC*V71-2005~
+LX*9~
+W01*20*EA**UK*00749756095266*MG*V9901-04********VC*V9901-04~
+W76*172~
+SE*25*127129233~
+GE*1*024664291~
+IEA*1*431163512~
+
+{
+   "WarehouseShipmentOrder": [
+      {
+         "Active": "true",
+         "WarehouseCode": "TVL-S",
+         "ShiptoCustomerName": "Wellstar Spalding Regional Hospital",
+         "ShipViaCode": "TVLF",
+         "OrganizationCode": "01",
+         "OrderDate": "2024-02-01 00:00:00",
+         "ShiptoCustomerPoNumber": "591289141",
+         "OrderFulfillmentTypeCode": "EDI",
+         "DivisionCode": "100",
+         "LineItem": [
+            {
+               "LineNumber": "1",
+               "OrderedQuantity": "22",
+               "OrderedUomCode": "EA",
+               "Active": "True",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "ItemCode": "23-502B"
+            },
+            {
+               "LineNumber": "2",
+               "OrderedQuantity": "11",
+               "OrderedUomCode": "EA",
+               "Active": "True",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "ItemCode": "26-003-TEST"
+            },
+            {
+               "LineNumber": "3",
+               "OrderedQuantity": "18",
+               "OrderedUomCode": "EA",
+               "Active": "True",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "ItemCode": "28-0102-TEST"
+            },
+            {
+               "LineNumber": "4",
+               "OrderedQuantity": "10",
+               "OrderedUomCode": "EA",
+               "Active": "True",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "ItemCode": "28-0801-TEST"
+            },
+            {
+               "LineNumber": "5",
+               "OrderedQuantity": "23",
+               "OrderedUomCode": "EA",
+               "Active": "True",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "ItemCode": "46-611-TEST"
+            },
+            {
+               "LineNumber": "6",
+               "OrderedQuantity": "25",
+               "OrderedUomCode": "EA",
+               "Active": "True",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "ItemCode": "9115-03"
+            },
+            {
+               "LineNumber": "7",
+               "OrderedQuantity": "25",
+               "OrderedUomCode": "EA",
+               "Active": "True",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "ItemCode": "PHER-1500B-TEST"
+            },
+            {
+               "LineNumber": "8",
+               "OrderedQuantity": "18",
+               "OrderedUomCode": "EA",
+               "Active": "True",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "ItemCode": "V71-2005-TEST"
+            },
+            {
+               "LineNumber": "9",
+               "OrderedQuantity": "20",
+               "OrderedUomCode": "EA",
+               "Active": "True",
+               "LabelAttributes": {
+                  "Character10": "EA"
+               },
+               "CustomAttributes": {
+                  "Character10": "EA"
+               },
+               "ItemCode": "V9901-04-TEST"
+            }
+         ],
+         "DedicatedOrder": "false",
+         "ShipmentOrderType": "CUSTOMER_ORDER",
+         "BilltoCustomerCode": "G0749756",
+         "PostPick": "false",
+         "ShipmentOrderNumber": "66120089",
+         "WarehouseSearchPath": "CSQUARED",
+         "CustomAttributes": {
+            "Character9": "G0749756"
+         },
+         "ShiptoCustomerAddress": {
+            "ZipOrPostalCode": "30224-4213",
+            "StateOrProvince": "GA",
+            "City": "Griffin",
+            "Address1": "601 S 8th Street"
+         }
+      }
+   ]
+}

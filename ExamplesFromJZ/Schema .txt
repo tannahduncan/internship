@@ -1,0 +1,711 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/WarehouseShipmentOrder",
+    "definitions": {
+        "WarehouseShipmentOrder": {
+            "description": "Order to ship items from a warehouse.\nWhere used: SCM to WMS.\nSince 1.1",
+            "type": "object",
+            "properties": {
+                "System": {
+                    "description": "Information on the system that published this message.",
+                    "$ref": "Global.json#/definitions/System"
+                },
+                "WarehouseShipmentOrderId": {
+                    "description": "The unique identifier for the warehouse shipment order.  It will consist of a pipe-separated concatenation of WarehouseCode, OrganizationCode, ShipmentOrderNumber and ShipmentOrderType.",
+                    "type": "string"
+                },
+                "WarehouseCode": {
+                    "description": "The warehouse code",
+                    "type": "string"
+                },
+                "OrganizationCode": {
+                    "description": "The organization code.",
+                    "type": "string"
+                },
+                "ShipmentOrderNumber": {
+                    "description": "The shipment order number",
+                    "type": "string"
+                },
+                "ShipmentOrderType": {
+                    "description": "The shipment order type.",
+                    "type": "string",
+                    "enum": [
+                        "CUSTOMER_ORDER",
+                        "WAREHOUSE_TRANSFER_ORDER",
+                        "SUPPLY_ORDER",
+                        "PRODUCTION_WORK_ORDER",
+                        "VENDOR_RETURN_ORDER"
+                    ]
+                },
+                "Active": {
+                    "description": "To indicate whether or not the record is active. When set to false, it's a directive to target systems that this record is no longer to be used. Some systems may delete the record outright whereas other systems may, for referential integrity purposes, still keep the record but flag it as inactive.",
+                    "type": "boolean"
+                },
+                "OrderFulfillmentTypeCode": {
+                    "description": "The order fulfillment type code.",
+                    "type": "string"
+                },
+                "ShipmentReference": {
+                    "description": "The shipment reference.",
+                    "type": "string"
+                },
+                "ShipViaCode": {
+                    "description": "The ship via code.",
+                    "type": "string"
+                },
+                "RouteStopSequence": {
+                    "description": "The route stop sequence.",
+                    "type": "number"
+                },
+                "OrderPriority": {
+                    "description": "The order priority.",
+                    "type": "number"
+                },
+                "WarehouseSearchPath": {
+                    "description": "The warehouse search path.",
+                    "type": "string"
+                },
+                "Trailer": {
+                    "description": "The trailer.",
+                    "type": "string"
+                },
+                "CustomerLocale": {
+                    "description": "The customer locale.",
+                    "type": "string"
+                },
+                "ExpiredProductsAllowed": {
+                    "description": "To indicate whether or not expired products are allowed.",
+                    "type": "boolean"
+                },
+                "RecalledProductsAllowed": {
+                    "description": "To indicate whether or not recalled products are allowed.",
+                    "type": "boolean"
+                },
+                "PackAndMarkSeparately": {
+                    "description": "To indicate whether or not to pack and mark separately.",
+                    "type": "boolean"
+                },
+                "ShipComplete": {
+                    "description": "To indicate whether or not it is a ship complete.",
+                    "type": "boolean"
+                },
+                "EmergencyType": {
+                    "description": "The emergency type.",
+                    "type": "string",
+                    "enum": [
+                        "REGULAR",
+                        "URGENT",
+                        "INTERRUPT"
+                    ]
+                },
+                "AsnRequired": {
+                    "description": "To indicate whether or not an ASN is required.",
+                    "type": "boolean"
+                },
+                "InvoiceNumber": {
+                    "description": "The invoice number.",
+                    "type": "string"
+                },
+                "PaymentMethod": {
+                    "description": "The payment method.",
+                    "type": "string",
+                    "enum": [
+                        "REGULAR",
+                        "COD_CASH",
+                        "COD_CHECK",
+                        "CREDIT_CARD"
+                    ]
+                },
+                "CreditCardAuthorized": {
+                    "description": "To indicate whether or not the credit card is authorized.",
+                    "type": "boolean"
+                },
+                "OrderDate": {
+                    "description": "The order date.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "ScheduledPickDate": {
+                    "description": "The scheduled pick date.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "RequestedByDate": {
+                    "description": "The requested by date.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "ShipByDate": {
+                    "description": "The ship by date.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "CancelByDate": {
+                    "description": "The cancel by date.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "CreditCardAuthorizationExpiryDate": {
+                    "description": "The credit card authorization expiry date.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "DeliveryAppointmentDoor": {
+                    "description": "The delivery appointment door.",
+                    "type": "string"
+                },
+                "DeliveryAppointmentDate": {
+                    "description": "The delivery appointment door.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "DeliveryAppointmentTimeOfDay": {
+                    "description": "The delivery appointment time of day.",
+                    "type": "string"
+                },
+                "BilltoCustomerCode": {
+                    "description": "The bill-to customer code.",
+                    "type": "string"
+                },
+                "BilltoCustomerName": {
+                    "description": "The bill-to customer name.",
+                    "type": "string"
+                },
+                "BilltoCustomerPoNumber": {
+                    "description": "The bill-to customer P/O number.",
+                    "type": "string"
+                },
+                "BilltoCustomerAddress": {
+                    "description": "The bill-to customer address.",
+                    "$ref": "Global.json#/definitions/Address"
+                },
+                "BilltoCustomerPhoneNumber": {
+                    "description": "The bill-to customer phone number.",
+                    "type": "string"
+                },
+                "BilltoCustomerGlobalLocationNumber": {
+                    "description": "The bill-to customer GLN.",
+                    "type": "string"
+                },
+                "ShiptoCustomerCode": {
+                    "description": "The ship-to customer code.",
+                    "type": "string"
+                },
+                "ShiptoCustomerName": {
+                    "description": "The ship-to customer name.",
+                    "type": "string"
+                },
+                "ShiptoCustomerPoNumber": {
+                    "description": "The ship-to customer P/O number.",
+                    "type": "string"
+                },
+                "ShiptoCustomerAddress": {
+                    "description": "The ship-to customer address.",
+                    "$ref": "Global.json#/definitions/Address"
+                },
+                "ShiptoCustomerEmail": {
+                    "description": "The ship-to customer email address.",
+                    "type": "string"
+                },
+                "ShiptoCustomerPhoneNumber": {
+                    "description": "The ship-to customer phone number.",
+                    "type": "string"
+                },
+                "ShiptoCustomerGlobalLocationNumber": {
+                    "description": "The ship-to customer GLN.",
+                    "type": "string"
+                },
+                "CustomerSpecificShipLabelDocumentFormat": {
+                    "description": "The customer specific ship label document format.",
+                    "type": "string"
+                },
+                "CustomerSpecificContainerLabelDocumentFormat": {
+                    "description": "The customer specific container label document format.",
+                    "type": "string"
+                },
+                "CustomerSpecificPickByLabelDocumentFormat": {
+                    "description": "The customer specific pick by label document format.",
+                    "type": "string"
+                },
+                "ShipLabelOption": {
+                    "description": "The ship label option.",
+                    "type": "string",
+                    "enum": [
+                        "NONE",
+                        "PREPICKING",
+                        "POSTPICKING"
+                    ]
+                },
+                "PrintContainerPreselectionLabel": {
+                    "description": "To indicate whether or not to print the container preselection label.",
+                    "type": "boolean"
+                },
+                "RouteCode": {
+                    "description": "The route code.",
+                    "type": "string"
+                },
+                "RouteName": {
+                    "description": "The route name.",
+                    "type": "string"
+                },
+                "StoreNumber": {
+                    "description": "The store number.",
+                    "type": "string"
+                },
+                "StoreDescription": {
+                    "description": "The store description.",
+                    "type": "string"
+                },
+                "DepartmentNumber": {
+                    "description": "The department number.",
+                    "type": "string"
+                },
+                "DepartmentDescription": {
+                    "description": "The department description.",
+                    "type": "string"
+                },
+                "DivisionCode": {
+                    "description": "The division code.",
+                    "type": "string"
+                },
+                "SourceSystemOrderNumber": {
+                    "description": "The source system order number.",
+                    "type": "string"
+                },
+                "DedicatedOrder": {
+                    "description": "To indicate whether or not it is a dedicated order.",
+                    "type": "boolean"
+                },
+                "ExternalReference": {
+                    "description": "The external reference. Used to represent how an external system of record identifies this record.",
+                    "type": "string"
+                },
+                "FreightTermsCode": {
+                    "description": "The freight terms code.",
+                    "type": "string"
+                },
+                "FreightPaymentTermsType": {
+                    "description": "The freight payment terms type.",
+                    "type": "string",
+                    "enum": [
+                        "COLLECT",
+                        "PREPAID",
+                        "PREPAID_AND_CHARGE",
+                        "THIRD_PARTY",
+                        "DELIVERY_DUTY_UNPAID"
+                    ]
+                },
+                "PoolLocation": {
+                    "description": "The pool location.",
+                    "type": "string"
+                },
+                "SubjectToRegulation": {
+                    "description": "To indicate whether or not it is subject to regulation.",
+                    "type": "boolean"
+                },
+                "TradingPartnerCustomerPo": {
+                    "description": "The trading partner customer P/O number.",
+                    "type": "string"
+                },
+                "TradingPartnerPromotionName": {
+                    "description": "The trading partner promotion name.",
+                    "type": "string"
+                },
+                "TradingPartnerVendor": {
+                    "description": "The trading partner vendor.",
+                    "type": "string"
+                },
+                "VendorReturnApplyType": {
+                    "description": "The vendor returns apply type.",
+                    "type": "string",
+                    "enum": [
+                        "SHIP",
+                        "DESTROY"
+                    ]
+                },
+                "PostPick": {
+                    "description": "To indicate whether or not this is post pick.",
+                    "type": "boolean"
+                },
+                "CustomerRequisitionNumber": {
+                    "description": "The customer's requisition number.",
+                    "type": "string"
+                },
+                "CustomerRequisitionContact": {
+                    "description": "The customer's requisition contact details.",
+                    "type": "string"
+                },
+                "CustomerBreakableSellingUom": {
+                    "description": "To indicate whether the selling UOM can be partially ordered or allocated.",
+                    "type": "boolean"
+                },
+                "Patient": {
+                    "description": "Patient information.",
+                    "$ref": "#/definitions/Patient"
+                },
+                "GroupAttributes": {
+                    "description": "The group attributes.",
+                    "$ref": "#/definitions/GroupAttributes"
+                },
+                "LabelAttributes": {
+                    "description": "The label attributes.",
+                    "$ref": "#/definitions/LabelAttributes"
+                },
+                "Instruction": {
+                    "description": "The instructions.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Instruction"
+                    }
+                },
+                "LineItem": {
+                    "description": "The line items.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/LineItem"
+                    }
+                },
+                "CustomAttributes": {
+                    "description": "Defines the custom attributes of the record.",
+                    "$ref": "Global.json#/definitions/CustomAttributes"
+                }
+            },
+            "required": [
+                "System",
+                "WarehouseShipmentOrderId"
+            ],
+            "additionalProperties": false
+        },
+        "LineItem": {
+            "description": "A line item.",
+            "type": "object",
+            "properties": {
+                "LineNumber": {
+                    "description": "The line number.",
+                    "type": "string"
+                },
+                "Active": {
+                    "description": "To indicate whether or not the record is active. When set to false, it's a directive to target systems that this record is no longer to be used. Some systems may delete the record outright whereas other systems may, for referential integrity purposes, still keep the record but flag it as inactive.",
+                    "type": "boolean"
+                },
+                "ItemCode": {
+                    "description": "The item code.",
+                    "type": "string"
+                },
+                "PackageCode": {
+                    "description": "The package code.",
+                    "type": "string"
+                },
+                "Lot": {
+                    "description": "The lot.",
+                    "type": "string"
+                },
+                "OrderedUomCode": {
+                    "description": "The UOM code this item was ordered in.",
+                    "type": "string"
+                },
+                "OrderedQuantity": {
+                    "description": "The order quantity.",
+                    "type": "number"
+                },
+                "SellingUomCode": {
+                    "description": "The UOM code this item is selling in.",
+                    "type": "string"
+                },
+                "SellingUomMultiplier": {
+                    "description": "The multiplier of the UOM this item is selling in.",
+                    "type": "number"
+                },
+                "UnitPrice": {
+                    "description": "The unit price.",
+                    "type": "number"
+                },
+                "ExtendedPrice": {
+                    "description": "The extended price.",
+                    "type": "number"
+                },
+                "RequestedReceiptDate": {
+                    "description": "The requested receipt date.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "CustomerPoNumber": {
+                    "description": "The customer P/O number.",
+                    "type": "string"
+                },
+                "CustomerPoLineNumber": {
+                    "description": "The customer P/O line number.",
+                    "type": "number"
+                },
+                "CustomerItemCode": {
+                    "description": "The customer item code.",
+                    "type": "string"
+                },
+                "KitOrderGroup": {
+                    "description": "The kit order group.",
+                    "type": "string"
+                },
+                "KitItemType": {
+                    "description": "The kit item type.",
+                    "type": "string",
+                    "enum": [
+                        "END_ITEM",
+                        "COMPONENT_ITEM"
+                    ]
+                },
+                "KitComponentMultiplier": {
+                    "description": "The kit component multiplier.",
+                    "type": "number"
+                },
+                "BackorderedAtSource": {
+                    "description": "To indicate whether or not it is backordered at source.",
+                    "type": "boolean"
+                },
+                "OpenOrderQuantity": {
+                    "description": "The open order quantity",
+                    "type": "number"
+                },
+                "ShippedToDateQuantity": {
+                    "description": "The shipped to date quantity.",
+                    "type": "number"
+                },
+                "ReturnSourceType": {
+                    "description": "The return source type.",
+                    "type": "string",
+                    "enum": [
+                        "ONHAND",
+                        "DAMAGED"
+                    ]
+                },
+                "ExternalReference": {
+                    "description": "The external reference. Used to represent how an external system of record identifies this record.",
+                    "type": "string"
+                },
+                "Gtin": {
+                    "description": "The GTIN.",
+                    "type": "string"
+                },
+                "LineItemDescription": {
+                    "description": "The line item description.",
+                    "type": "string"
+                },
+                "ShortagesFilled": {
+                    "description": "To indicate whether or not shortages are filled.",
+                    "type": "boolean"
+                },
+                "BuyerStyleNumber": {
+                    "description": "The buyer style number.",
+                    "type": "string"
+                },
+                "ColorDescription": {
+                    "description": "The color description.",
+                    "type": "string"
+                },
+                "SizeDescription": {
+                    "description": "The size description.",
+                    "type": "string"
+                },
+                "TradingPartnerItemDescription": {
+                    "description": "The trading partner item description.",
+                    "type": "string"
+                },
+                "SourceSystemOrderLineNumber": {
+                    "description": "The source system order line number.",
+                    "type": "string"
+                },
+                "SupplyOrderNumber": {
+                    "description": "The supply order number.",
+                    "type": "string"
+                },
+                "ShipExpiryLeadTime": {
+                    "description": "The number of days before the expiry date at which inventory must no longer be available for shipping.",
+                    "type": "number"
+                },
+                "Location": {
+                    "description": "The location for the item.",
+                    "type": "string"
+                },
+                "LicenseVerificationRequired": {
+                    "description": "To indicate whether or not license verification is required on this line item.",
+                    "type": "boolean"
+                },
+                "PickGroup": {
+                    "description": "The pick group.",
+                    "type": "string"
+                },
+                "InventoryAttributes": {
+                    "description": "The inventory attributes.",
+                    "$ref": "#/definitions/InventoryAttributes"
+                },
+                "LabelAttributes": {
+                    "description": "The label attributes.",
+                    "$ref": "#/definitions/LabelAttributes"
+                },
+                "Instruction": {
+                    "description": "The instructions.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Instruction"
+                    }
+                },
+                "CustomAttributes": {
+                    "description": "Defines the custom attributes of the record.",
+                    "$ref": "Global.json#/definitions/CustomAttributes"
+                }
+            },
+            "additionalProperties": false
+        },
+        "Instruction": {
+            "description": "An instruction.",
+            "type": "object",
+            "properties": {
+                "Sequence": {
+                    "description": "The instruction sequence.",
+                    "type": "number"
+                },
+                "Comment": {
+                    "description": "The instruction comment.",
+                    "type": "string"
+                },
+                "PrintOnPickList": {
+                    "description": "To indicate whether or not to print on a pick list.",
+                    "type": "boolean"
+                },
+                "PrintOnMasterPackingList": {
+                    "description": "To indicate whether or not to print on a master packing list.",
+                    "type": "boolean"
+                },
+                "PrintOnShippingLabel": {
+                    "description": "To indicate whether or not to print on a shipping label.",
+                    "type": "boolean"
+                },
+                "CustomAttributes": {
+                    "description": "Defines the custom attributes of the record.",
+                    "$ref": "Global.json#/definitions/CustomAttributes"
+                }
+            },
+            "additionalProperties": false
+        },
+        "InventoryAttributes": {
+            "description": "The inventory attributes.",
+            "type": "object",
+            "properties": {
+                "Character1": {
+                    "description": "The first inventory attribute.",
+                    "type": "string"
+                },
+                "Character2": {
+                    "description": "The second inventory attribute.",
+                    "type": "string"
+                },
+                "Character3": {
+                    "description": "The third inventory attribute.",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "GroupAttributes": {
+            "description": "The group attributes.",
+            "type": "object",
+            "properties": {
+                "Character1": {
+                    "description": "The first group attribute.",
+                    "type": "string"
+                },
+                "Character2": {
+                    "description": "The second group attribute.",
+                    "type": "string"
+                },
+                "Character3": {
+                    "description": "The third group attribute.",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "LabelAttributes": {
+            "description": "The label attributes.",
+            "type": "object",
+            "properties": {
+                "Character1": {
+                    "description": "The first label attribute.",
+                    "type": "string"
+                },
+                "Character2": {
+                    "description": "The second label attribute.",
+                    "type": "string"
+                },
+                "Character3": {
+                    "description": "The third label attribute.",
+                    "type": "string"
+                },
+                "Character4": {
+                    "description": "The fourth label attribute.",
+                    "type": "string"
+                },
+                "Character5": {
+                    "description": "The fifth label attribute.",
+                    "type": "string"
+                },
+                "Character6": {
+                    "description": "The sixth label attribute.",
+                    "type": "string"
+                },
+                "Character7": {
+                    "description": "The seventh label attribute.",
+                    "type": "string"
+                },
+                "Character8": {
+                    "description": "The eight label attribute.",
+                    "type": "string"
+                },
+                "Character9": {
+                    "description": "The ninth label attribute.",
+                    "type": "string"
+                },
+                "Character10": {
+                    "description": "The tenth label attribute.",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "Patient": {
+            "description": "The patient information.",
+            "type": "object",
+            "properties": {
+                "MedicalRecordNumber": {
+                    "description": "The medical record number.",
+                    "type": "string"
+                },
+                "FirstName": {
+                    "description": "The first name.",
+                    "type": "string"
+                },
+                "LastName": {
+                    "description": "The last name.",
+                    "type": "string"
+                },
+                "MiddleName": {
+                    "description": "The middle name.",
+                    "type": "string"
+                },
+                "DateOfBirth": {
+                    "description": "The date of birth.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "Age": {
+                    "description": "The age.",
+                    "type": "number"
+                },
+                "Location": {
+                    "description": "The location.",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}
